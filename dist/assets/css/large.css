@@ -81,6 +81,9 @@
 
 /* @end Common */
 /* @start Navigation Header */
+header .nt-header-inner {
+  max-width: 73.125rem;
+  margin: 0 auto; }
 header nav li {
   padding: 0 .7%; }
 header nav a {
