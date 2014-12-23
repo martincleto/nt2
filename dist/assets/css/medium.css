@@ -1,0 +1,269 @@
+/* Medium styles */
+/* Custom includes */
+/* fonts */
+@font-face {
+  font-family: 'NationalTrustDisplayTTRegular';
+  src: url("../fonts/nationaltrustdisplaytt-regular.eot");
+  src: url("../fonts/nationaltrustdisplaytt-regular.eot") format("embedded-opentype"), url("../fonts/nationaltrustdisplaytt-regular.woff") format("woff"), url("../fonts/nationaltrustdisplaytt-regular.ttf") format("truetype"), url("../fonts/nationaltrustdisplaytt-regular.svg#NationalTrustDisplayTTRegular") format("svg"); }
+@font-face {
+  font-family: 'NationalTrustTTBold';
+  src: url("../fonts/nationaltrusttt-bold.eot");
+  src: url("../fonts/nationaltrusttt-bold.eot") format("embedded-opentype"), url("../fonts/nationaltrusttt-bold.woff") format("woff"), url("../fonts/nationaltrusttt-bold.ttf") format("truetype"), url("../fonts/nationaltrusttt-bold.svg#NationalTrustTTBold") format("svg"); }
+@font-face {
+  font-family: 'NationalTrustTTItalic';
+  src: url("../fonts/nationaltrusttt-italic.eot");
+  src: url("../fonts/nationaltrusttt-italic.eot") format("embedded-opentype"), url("../fonts/nationaltrusttt-italic.woff") format("woff"), url("../fonts/nationaltrusttt-italic.ttf") format("truetype"), url("../fonts/nationaltrusttt-italic.svg#NationalTrustTTItalic") format("svg"); }
+@font-face {
+  font-family: 'NationalTrustTTRegular';
+  src: url("../fonts/nationaltrusttt-regular.eot");
+  src: url("../fonts/nationaltrusttt-regular.eot") format("embedded-opentype"), url("../fonts/nationaltrusttt-regular.woff") format("woff"), url("../fonts/nationaltrusttt-regular.ttf") format("truetype"), url("../fonts/nationaltrusttt-regular.svg#NationalTrustTTRegular") format("svg"); }
+/* overide Foundation settings */
+/* custom vars */
+/* helpers */
+.clearfix
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  width: 0;
+  height: 0;
+  visibility: hidden; }
+
+.screen-reader-txt {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  overflow: hidden;
+  width: 1px;
+  height: 1px; }
+
+.hidden {
+  display: none; }
+
+.text-hidden,
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* Common button styles */
+/* Specific buttons */
+.search button {
+  width: 24px;
+  height: 24px;
+  background: transparent url("/assets/img/icon-search.png") center center no-repeat;
+  vertical-align: middle;
+  border: none; }
+
+.button.round {
+  background: transparent;
+  font-family: 'NationalTrustDisplayTTRegular';
+  font-size: 1.25em;
+  background-color: transparent;
+  padding: .75em 1em;
+  border: solid 2px #2c2c2c; }
+  .button.round:hover {
+    color: #2c2c2c; }
+
+/* @start Common */
+h1 {
+  font-weight: normal;
+  font-size: 5em;
+  line-height: 1.1;
+  font-family: NationalTrustDisplayTTRegular;
+  color: #2c2c2c;
+  margin: 0 0 .67em 0; }
+
+h3 {
+  font-weight: normal;
+  font-size: 2.625em;
+  line-height: 1.2;
+  font-family: NationalTrustDisplayTTRegular;
+  color: #2c2c2c; }
+
+h4 {
+  font-weight: normal;
+  font-size: 2.25em;
+  line-height: 1;
+  font-family: NationalTrustDisplayTTRegular;
+  color: #2c2c2c; }
+
+h5 {
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1;
+  font-family: NationalTrustDisplayTTRegular;
+  color: #2c2c2c; }
+
+.nt-header-module-intro,
+.nt-header-module-details,
+.nt-meta-info,
+.nt-content-body,
+.nt-related-content {
+  padding-left: 10.4% !important;
+  padding-right: 10.4% !important; }
+
+/* @end Common */
+/* @start Navigation Header */
+header nav {
+  position: static;
+  display: block;
+  float: left;
+  width: 74%;
+  margin-top: 18px;
+  max-height: 32px;
+  /* temp */
+  overflow: hidden;
+  /* temp */ }
+  header nav li {
+    display: inline-block;
+    border-bottom: none;
+    text-align: center;
+    padding: 0 0.5%;
+    border-left: solid 1px #d8d8d8; }
+    header nav li:first-child {
+      border-top: none;
+      padding-left: 0;
+      border-left: 0; }
+    header nav li a {
+      line-height: 2;
+      padding: 0;
+      margin: 0 1em; }
+header .nt-search-handler {
+  right: 19px; }
+header .nt-search input {
+  font-size: .9em; }
+header .nt-mobile-nav-button {
+  display: none; }
+
+/* @end Navigation Header */
+/* @start Module Header Content */
+.nt-header-module {
+  margin-bottom: 3rem; }
+  .nt-header-module .nt-header-module-intro .panel {
+    padding: 27px 0 16px; }
+  .nt-header-module .nt-header-module-details .panel {
+    padding: 1.75rem 1.75rem .75rem;
+    margin-bottom: -30px; }
+  .nt-header-module .nt-copy {
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-family: NationalTrustTTRegular; }
+  .nt-header-module .nt-header-module-details-header {
+    margin-bottom: 28px; }
+    .nt-header-module .nt-header-module-details-header .nt-thumb {
+      width: 68px; }
+    .nt-header-module .nt-header-module-details-header h4, .nt-header-module .nt-header-module-details-header .nt-location {
+      margin-left: 92px; }
+
+/* @end Module Header Content */
+/* @start Module Meta Info */
+.nt-meta-info > .columns {
+  padding-left: 0;
+  padding-right: 0; }
+.nt-meta-info ul {
+  border-top: solid 1px #979797;
+  border-bottom: solid 1px #979797; }
+.nt-meta-info li {
+  height: 4rem;
+  overflow: hidden;
+  border-bottom: 0; }
+  .nt-meta-info li:first-child {
+    padding-top: 1.25rem;
+    border-bottom: solid 1px #979797; }
+  .nt-meta-info li:nth-child(2) {
+    border-bottom: solid 1px #979797; }
+  .nt-meta-info li:nth-child(2n+1) {
+    width: 45%;
+    border-right: solid 1px #979797; }
+  .nt-meta-info li:nth-child(2n) {
+    width: 55%;
+    padding-left: 5%; }
+
+/* @end Module Meta Info */
+/* @start Module Content Body */
+.nt-content-body .tabs {
+  display: none !important; }
+.nt-content-body h3 {
+  display: block; }
+.nt-content-body h5 {
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem; }
+.nt-content-body .tabs-content > .content {
+  display: block;
+  float: left; }
+  .nt-content-body .tabs-content > .content.medium-6 {
+    /* reset foundation tabs content width */
+    width: 50%; }
+  .nt-content-body .tabs-content > .content#content-body-panel-1 {
+    padding-left: 0; }
+  .nt-content-body .tabs-content > .content#content-body-panel-2 {
+    padding-right: 0; }
+
+/* @end Module Content Body */
+/* @start Module Related Property */
+.nt-related-property {
+  background: #f58eab url("../img/stub/bg-property-large.png") no-repeat;
+  background-size: cover; }
+
+/* @end Module Related Property */
+/* @start Module Related Content */
+.nt-related-content .tabs dd {
+  float: left;
+  width: 50%; }
+.nt-related-content h4 {
+  max-height: 2em;
+  overflow: hidden; }
+.nt-related-content .tabs-content > .content .columns {
+  padding-left: 0;
+  padding-right: 0; }
+.nt-related-content .panel {
+  position: relative; }
+  .nt-related-content .panel:before, .nt-related-content .panel:after {
+    content: " ";
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0;
+    visibility: hidden; }
+  .nt-related-content .panel .nt-img-holder {
+    float: left;
+    width: 52.1%; }
+  .nt-related-content .panel .nt-card-content {
+    padding-left: 55%; }
+
+/* @end Module Related Content */
+/* @start Recipe Template Theme */
+.nt-recipe-template .nt-header-module {
+  border-bottom: solid 30px #fff; }
+  .nt-recipe-template .nt-header-module h1 {
+    font-weight: normal;
+    font-size: 5em;
+    line-height: 1.1;
+    font-family: NationalTrustDisplayTTRegular;
+    color: #fff; }
+  .nt-recipe-template .nt-header-module h3 {
+    font-weight: normal;
+    font-size: 2.625em;
+    line-height: 1.2;
+    font-family: NationalTrustDisplayTTRegular;
+    color: #fff; }
+  .nt-recipe-template .nt-header-module h4 {
+    font-weight: normal;
+    font-size: 2.25em;
+    line-height: 1;
+    font-family: NationalTrustDisplayTTRegular;
+    color: #fff; }
+.nt-recipe-template .nt-content-body h3 {
+  color: #d01170; }
+.nt-recipe-template .nt-related-property {
+  background-image: url("../img/stub/bg-property-large.png"); }
+
+/* @end Recipe Template Theme */
