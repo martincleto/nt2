@@ -2578,9 +2578,10 @@ ol {
 /* @end Common */
 /* @start Navigation Header */
 header {
-  position: relative;
-  height: 69px;
   background-color: #fff; }
+  header .nt-header-inner {
+    position: relative;
+    height: 69px; }
   header .nt-logo {
     float: left;
     width: 38px;
