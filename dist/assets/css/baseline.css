@@ -2674,9 +2674,10 @@ header {
     font-family: NationalTrustTTRegular; }
   .nt-header-module .nt-header-module-details {
     position: relative;
-    margin-bottom: -2rem;
     z-index: 10; }
     .nt-header-module .nt-header-module-details .panel {
+      margin-bottom: -2rem; }
+    .nt-header-module .nt-header-module-details .nt-panel-inner {
       padding: 1.7rem 1rem .5rem; }
   .nt-header-module .nt-header-module-details-header {
     border-bottom: solid 1px #fff;
@@ -2757,19 +2758,6 @@ header {
       font-family: 'NationalTrustDisplayTTRegular';
       padding: 0 0.375em;
       margin-left: 0; }
-      .nt-content-body .tabs dd a {
-        			/*
-        			font-family: 'NationalTrustDisplayTTRegular';
-        			font-size: 1.25em;
-        			background-color: transparent;
-        			padding: .75em 1em;
-        			border: solid 2px $nt-colour-nearly-black;
-        
-        
-        				&:hover {
-        				color: $nt-colour-nearly-black;
-        				}
-        			*/ }
     .nt-content-body .tabs dd.active a {
       color: #fff;
       background-color: #2c2c2c; }
@@ -2799,6 +2787,10 @@ header {
       display: block;
       color: #2c2c2c;
       margin-top: .3em; }
+  .nt-content-body .nt-video-container {
+    margin-bottom: 2rem; }
+    .nt-content-body .nt-video-container img {
+      width: 100%; }
 
 /* @end Module Content Body */
 /* @start Module Related Property */
@@ -2817,13 +2809,12 @@ header {
     color: #fff; }
   .nt-related-property h2 {
     margin-bottom: 1em; }
-  .nt-related-property .button {
+  .nt-related-property .button.round {
     color: #fff;
     border-color: #fff;
     border-width: 2px;
     background-color: transparent;
-    font-family: 'NationalTrustDisplayTTRegular';
-    box-shadow: inset 2px 2px 5px 0px rgba(0, 0, 0, 0.5), 2px 2px 5px 0 rgba(0, 0, 0, 0.5); }
+    font-family: 'NationalTrustDisplayTTRegular'; }
 
 /* @end Module Related Property */
 /* @start Module Related Content */
@@ -2866,14 +2857,16 @@ header {
 
 /* @end Module Related Content */
 /* @start Recipe Template Theme */
+.nt-recipe-template .button:hover {
+  color: #fff; }
 .nt-recipe-template header {
-  background-color: #3f394b; }
+  background-color: #22404c; }
   .nt-recipe-template header nav a {
     color: #fff; }
 .nt-recipe-template ol > li:before {
   background-color: #d01170; }
 .nt-recipe-template .nt-header-module {
-  background-color: #3f394b;
+  background-color: #22404c;
   color: #fff; }
   .nt-recipe-template .nt-header-module h1 {
     font-weight: normal;
@@ -2901,7 +2894,7 @@ header {
     color: #fff; }
 .nt-recipe-template .nt-header-module-details-header {
   border-bottom: solid 1px #f58eab; }
-.nt-recipe-template .nt-header-module-details .panel {
+.nt-recipe-template .nt-header-module-details .nt-panel-inner {
   background-color: #d01170;
   color: #fff; }
 .nt-recipe-template .icon {

@@ -79,13 +79,6 @@
   padding-left: 0.9375rem !important;
   padding-right: 0.9375rem !important; }
 
-/*
-.nt-meta-info,
-.nt-content-body {
-	padding-left: 9.5% !important;
-	padding-right: 9.5% !important;
-}
-*/
 /* @end Common */
 /* @start Navigation Header */
 header nav li {
@@ -108,16 +101,29 @@ header .search-handler {
   margin-bottom: 1.8rem; }
   .nt-header-module > .row {
     max-width: 73.125rem;
-    padding-left: 0;
-    padding-right: 0;
     margin: 0 auto !important; }
+  .nt-header-module h1 {
+    width: 85%; }
   .nt-header-module .nt-header-module-details .panel {
     width: 94%;
     position: absolute;
-    bottom: -35px;
+    bottom: -4.5rem;
     margin-bottom: 0; }
+    .nt-header-module .nt-header-module-details .panel:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: .9rem;
+      background-image: url("../img/property-card-bottom-shape.svg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 110%; }
   .nt-header-module .nt-header-module-details-header {
     margin-bottom: 28px; }
+  .nt-header-module .nt-share-group .nt-share-buttons {
+    max-width: 73.125rem;
+    width: 100%;
+    left: .9375rem; }
 
 /* @end Module Header Content */
 /* @start Module Meta Info */
@@ -133,16 +139,18 @@ header .search-handler {
 
 /* @end Module Content Body */
 /* @start Module Related Content */
-.nt-related-content .tabs {
-  width: 50%;
-  margin: 0 auto; }
-.nt-related-content .tabs-content > .content .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem; }
-.nt-related-content .panel .nt-img-holder {
-  float: none; }
-.nt-related-content .panel .nt-card-content {
-  padding: 1.8rem 0.9375rem 1.5rem; }
+.nt-related-content {
+  padding-top: 3rem; }
+  .nt-related-content .tabs {
+    width: 50%;
+    margin: 0 auto; }
+  .nt-related-content .tabs-content > .content .columns {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; }
+  .nt-related-content .panel .nt-img-holder {
+    float: none; }
+  .nt-related-content .panel .nt-card-content {
+    padding: 1.8rem 0.9375rem 1.5rem; }
 
 /* @end Module Related Content */
 /* @start Recipe Template Theme */

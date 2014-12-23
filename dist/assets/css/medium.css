@@ -103,6 +103,7 @@ h5 {
 
 .nt-header-module-intro,
 .nt-header-module-details,
+.nt-share-group,
 .nt-meta-info,
 .nt-content-body,
 .nt-related-content {
@@ -145,23 +146,39 @@ header .nt-mobile-nav-button {
 /* @end Navigation Header */
 /* @start Module Header Content */
 .nt-header-module {
+  position: relative;
   margin-bottom: 3rem; }
   .nt-header-module .nt-header-module-intro .panel {
     padding: 27px 0 16px; }
+  .nt-header-module .nt-header-module-intro h1 {
+    width: 77%; }
   .nt-header-module .nt-header-module-details .panel {
-    padding: 1.75rem 1.75rem .75rem;
-    margin-bottom: -30px; }
+    margin-bottom: -2.5rem; }
+  .nt-header-module .nt-header-module-details .nt-panel-inner {
+    padding: 1.75rem 1.75rem 1.5rem; }
   .nt-header-module .nt-copy {
     font-weight: normal;
     font-size: 1.5em;
     line-height: 1.5;
     font-family: NationalTrustTTRegular; }
   .nt-header-module .nt-header-module-details-header {
-    margin-bottom: 28px; }
+    margin-bottom: 1.75rem; }
     .nt-header-module .nt-header-module-details-header .nt-thumb {
       width: 68px; }
     .nt-header-module .nt-header-module-details-header h4, .nt-header-module .nt-header-module-details-header .nt-location {
       margin-left: 92px; }
+  .nt-header-module .cta a {
+    font-size: 1.5em; }
+  .nt-header-module .nt-share-group {
+    padding: 0; }
+    .nt-header-module .nt-share-group .button {
+      display: none; }
+    .nt-header-module .nt-share-group .nt-share-buttons {
+      position: absolute;
+      bottom: -26px;
+      left: 10.4%;
+      display: block;
+      z-index: 10; }
 
 /* @end Module Header Content */
 /* @start Module Meta Info */
@@ -206,6 +223,10 @@ header .nt-mobile-nav-button {
     padding-left: 0; }
   .nt-content-body .tabs-content > .content#content-body-panel-2 {
     padding-right: 0; }
+.nt-content-body li {
+  padding-right: 1rem; }
+.nt-content-body .nt-video-container {
+  margin-bottom: 3rem; }
 
 /* @end Module Content Body */
 /* @start Module Related Property */
@@ -215,29 +236,31 @@ header .nt-mobile-nav-button {
 
 /* @end Module Related Property */
 /* @start Module Related Content */
-.nt-related-content .tabs dd {
-  float: left;
-  width: 50%; }
-.nt-related-content h4 {
-  max-height: 2em;
-  overflow: hidden; }
-.nt-related-content .tabs-content > .content .columns {
-  padding-left: 0;
-  padding-right: 0; }
-.nt-related-content .panel {
-  position: relative; }
-  .nt-related-content .panel:before, .nt-related-content .panel:after {
-    content: " ";
-    display: block;
-    clear: both;
-    width: 0;
-    height: 0;
-    visibility: hidden; }
-  .nt-related-content .panel .nt-img-holder {
+.nt-related-content {
+  padding-top: 2rem; }
+  .nt-related-content .tabs dd {
     float: left;
-    width: 52.1%; }
-  .nt-related-content .panel .nt-card-content {
-    padding-left: 55%; }
+    width: 50%; }
+  .nt-related-content h4 {
+    max-height: 2em;
+    overflow: hidden; }
+  .nt-related-content .tabs-content > .content .columns {
+    padding-left: 0;
+    padding-right: 0; }
+  .nt-related-content .panel {
+    position: relative; }
+    .nt-related-content .panel:before, .nt-related-content .panel:after {
+      content: " ";
+      display: block;
+      clear: both;
+      width: 0;
+      height: 0;
+      visibility: hidden; }
+    .nt-related-content .panel .nt-img-holder {
+      float: left;
+      width: 52.1%; }
+    .nt-related-content .panel .nt-card-content {
+      padding-left: 55%; }
 
 /* @end Module Related Content */
 /* @start Recipe Template Theme */
@@ -261,8 +284,6 @@ header .nt-mobile-nav-button {
     line-height: 1;
     font-family: NationalTrustDisplayTTRegular;
     color: #fff; }
-.nt-recipe-template .nt-content-body h3 {
-  color: #d01170; }
 .nt-recipe-template .nt-related-property {
   background-image: url("../img/stub/bg-property-large.png"); }
 
