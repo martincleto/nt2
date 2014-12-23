@@ -2644,7 +2644,7 @@ header {
 /* @start Module Header Content */
 .nt-header-module {
   margin-bottom: 1rem; }
-  .nt-header-module .module-main-image img {
+  .nt-header-module .nt-main-image img {
     width: 100%; }
   .nt-header-module .nt-header-module-intro .panel {
     padding: 1rem 1rem .5rem; }

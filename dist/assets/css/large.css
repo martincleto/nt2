@@ -102,7 +102,9 @@ header .search-handler {
   .nt-header-module > .row {
     max-width: 73.125rem;
     margin: 0 auto !important; }
-  .nt-header-module h1 {
+  .nt-header-module .nt-header-module-intro .panel {
+    padding-top: 3.6em; }
+  .nt-header-module .nt-header-module-intro h1 {
     width: 85%; }
   .nt-header-module .nt-header-module-details .panel {
     width: 94%;
