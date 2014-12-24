@@ -2562,7 +2562,8 @@ ol {
       content: counter(li-counter);
       counter-increment: li-counter; }
 
-.nt-header-module-details {
+.nt-header-module-details,
+.nt-related-content {
   padding-left: 0.9375rem !important;
   padding-right: 0.9375rem !important; }
 

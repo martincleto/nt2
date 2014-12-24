@@ -66,7 +66,8 @@
 .nt-header-module-intro,
 .nt-header-module-details,
 .nt-meta-info,
-.nt-content-body {
+.nt-content-body,
+.nt-related-content {
   padding-left: 0.9375rem !important;
   padding-right: 0.9375rem !important; }
 

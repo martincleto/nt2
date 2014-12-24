@@ -249,20 +249,6 @@ header .nt-mobile-nav-button {
   .nt-related-content .tabs-content > .content .columns {
     padding-left: 0;
     padding-right: 0; }
-  .nt-related-content .panel {
-    position: relative; }
-    .nt-related-content .panel:before, .nt-related-content .panel:after {
-      content: " ";
-      display: block;
-      clear: both;
-      width: 0;
-      height: 0;
-      visibility: hidden; }
-    .nt-related-content .panel .nt-img-holder {
-      float: left;
-      width: 52.1%; }
-    .nt-related-content .panel .nt-card-content {
-      padding-left: 55%; }
 
 /* @end Module Related Content */
 /* @start Recipe Template Theme */
