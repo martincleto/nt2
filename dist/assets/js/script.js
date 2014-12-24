@@ -1255,7 +1255,12 @@
 }(jQuery, window, window.document));
 ;(function($){
 
-	var supportMQ = Modernizr.mq('only all');
+	var supportMQ = Modernizr.mq('only all'),
+		breakpoints = {
+			'small' : ['0em','40em'],
+			'medium': ['40.063em', '59.875em'],
+			'large': ['59.938em', '90em']
+		};
 
 	var menuNav = {
 
@@ -1271,7 +1276,7 @@
 	var setColHeight = function($targetCol,$refCol){
 		if (!supportMQ) return;
 
-		var colHeight = (Modernizr.mq('only screen and (min-width: 64.063em)'))? $refCol.height() : 'auto';
+		var colHeight = (Modernizr.mq('only screen and (min-width: ' + breakpoints.large[0] + ')'))? $refCol.height() : 'auto';
 
 		$targetCol.height(colHeight);
 	}

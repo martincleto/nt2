@@ -373,16 +373,16 @@ meta.foundation-mq-medium {
   width: 40.063em; }
 
 meta.foundation-mq-medium-only {
-  font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/";
+  font-family: "/only screen and (min-width:40.063em) and (max-width:59.875em)/";
   width: 40.063em; }
 
 meta.foundation-mq-large {
-  font-family: "/only screen and (min-width:64.063em)/";
-  width: 64.063em; }
+  font-family: "/only screen and (min-width:59.938em)/";
+  width: 59.938em; }
 
 meta.foundation-mq-large-only {
-  font-family: "/only screen and (min-width:64.063em) and (max-width:90em)/";
-  width: 64.063em; }
+  font-family: "/only screen and (min-width:59.938em) and (max-width:90em)/";
+  width: 59.938em; }
 
 meta.foundation-mq-xlarge {
   font-family: "/only screen and (min-width:90.063em)/";
@@ -1137,7 +1137,7 @@ select {
     position: relative;
     right: 91.66667%;
     left: auto; } }
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 59.938em) {
   .large-push-0 {
     position: relative;
     left: 0%;
@@ -1707,7 +1707,7 @@ select {
       clear: none; }
     .medium-block-grid-12 > li:nth-of-type(12n+1) {
       clear: both; } }
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 59.938em) {
   .large-block-grid-1 > li {
     width: 100%;
     list-style: none; }
@@ -2143,7 +2143,7 @@ button::-moz-focus-inner {
   th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.show-for-medium-only, td.show-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.show-for-medium, td.show-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, td.hide-for-large-up, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
     display: table-cell !important; } }
 /* large displays */
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 59.938em) {
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important; }
 
@@ -2459,22 +2459,13 @@ th.hide-for-touch {
 
 /* Common button styles */
 /* Specific buttons */
-.search button {
+.nt-search button {
   width: 24px;
   height: 24px;
-  background: transparent url("/assets/img/icon-search.png") center center no-repeat;
+  background: transparent url("../img/icon-search.png") center center no-repeat;
   vertical-align: middle;
+  padding: 0;
   border: none; }
-
-.button.round {
-  background: transparent;
-  font-family: 'NationalTrustDisplayTTRegular';
-  font-size: 1.25em;
-  background-color: transparent;
-  padding: .75em 1em;
-  border: solid 2px #2c2c2c; }
-  .button.round:hover {
-    color: #2c2c2c; }
 
 .row {
   max-width: 73.125rem; }
@@ -2707,8 +2698,6 @@ header {
         color: inherit; }
   .nt-header-module p {
     line-height: 1.75; }
-  .nt-header-module .cta a {
-    border-color: #fff; }
   .nt-header-module .nt-main-image {
     position: relative; }
     .nt-header-module .nt-main-image .nt-image-credits {
@@ -2756,12 +2745,31 @@ header {
       float: none;
       display: table-cell;
       width: 50%;
-      font-family: 'NationalTrustDisplayTTRegular';
       padding: 0 0.375em;
       margin-left: 0; }
+      .nt-content-body .tabs dd a {
+        font-family: 'NationalTrustDisplayTTRegular';
+        background-color: transparent;
+        color: #fff;
+        padding: .75em 1em;
+        border: solid 2px #fff;
+        transition: background-color 0.5s ease;
+        background-color: transparent; }
+        .nt-content-body .tabs dd a:hover, .nt-content-body .tabs dd a:active {
+          color: #2c2c2c;
+          background-color: #fff;
+          text-decoration: none; }
     .nt-content-body .tabs dd.active a {
+      font-family: 'NationalTrustDisplayTTRegular';
+      background-color: transparent;
       color: #fff;
-      background-color: #2c2c2c; }
+      padding: .75em 1em;
+      border: solid 2px #fff;
+      transition: background-color 0.5s ease; }
+      .nt-content-body .tabs dd.active a:hover, .nt-content-body .tabs dd.active a:active {
+        color: #2c2c2c;
+        background-color: #fff;
+        text-decoration: none; }
   .nt-content-body .tabs-content {
     margin-bottom: 0; }
     .nt-content-body .tabs-content > .content {
@@ -2810,12 +2818,8 @@ header {
     color: #fff; }
   .nt-related-property h2 {
     margin-bottom: 1em; }
-  .nt-related-property .button.round {
-    color: #fff;
-    border-color: #fff;
-    border-width: 2px;
-    background-color: transparent;
-    font-family: 'NationalTrustDisplayTTRegular'; }
+  .nt-related-property .nt-cta a {
+    font-size: 1.25em; }
 
 /* @end Module Related Property */
 /* @start Module Related Content */
@@ -2828,18 +2832,25 @@ header {
     padding-right: 0.9375rem;
     margin-left: 0; }
   .nt-related-content .tabs a {
-    color: #fff;
-    border-color: #fff;
-    border-width: 2px;
+    font-family: 'NationalTrustDisplayTTRegular';
     background-color: transparent;
+    color: #fff;
+    padding: .75em 1em;
+    border: solid 2px #fff;
+    transition: background-color 0.5s ease;
     display: inline-block;
-    font-size: 1.25em;
-    font-family: 'NationalTrustDisplayTTRegular'; }
+    font-size: 1.25em; }
+    .nt-related-content .tabs a:hover, .nt-related-content .tabs a:active {
+      color: #22404c;
+      background-color: #fff;
+      text-decoration: none; }
   .nt-related-content h4 {
     margin-bottom: 2rem; }
   .nt-related-content .panel {
     background-color: #fff;
     margin-bottom: 1.125rem; }
+    .nt-related-content .panel .nt-img-holder img {
+      width: 100%; }
     .nt-related-content .panel .nt-card-content {
       color: #787878;
       padding: 1.8rem 0.9375rem 1.5rem; }
@@ -2895,6 +2906,17 @@ header {
     color: #fff; }
 .nt-recipe-template .nt-header-module-details-header {
   border-bottom: solid 1px #f58eab; }
+.nt-recipe-template .nt-header-module-details .nt-cta a {
+  font-family: 'NationalTrustDisplayTTRegular';
+  background-color: transparent;
+  color: #fff;
+  padding: .75em 1em;
+  border: solid 2px #fff;
+  transition: background-color 0.5s ease; }
+  .nt-recipe-template .nt-header-module-details .nt-cta a:hover, .nt-recipe-template .nt-header-module-details .nt-cta a:active {
+    color: #d01170;
+    background-color: #fff;
+    text-decoration: none; }
 .nt-recipe-template .nt-header-module-details .nt-panel-inner {
   background-color: #d01170;
   color: #fff; }
@@ -2902,8 +2924,19 @@ header {
   float: left;
   width: 16.66667%; }
 .nt-recipe-template .nt-related-property {
-  background-color: #f58eab;
+  background-color: #d01170;
   background-image: url("../img/stub/bg-property-small.png"); }
+  .nt-recipe-template .nt-related-property .nt-cta a {
+    font-family: 'NationalTrustDisplayTTRegular';
+    background-color: transparent;
+    color: #fff;
+    padding: .75em 1em;
+    border: solid 2px #fff;
+    transition: background-color 0.5s ease; }
+    .nt-recipe-template .nt-related-property .nt-cta a:hover, .nt-recipe-template .nt-related-property .nt-cta a:active {
+      color: #ce375c;
+      background-color: #fff;
+      text-decoration: none; }
 .nt-recipe-template .nt-related-content {
   background-color: #22404c; }
 

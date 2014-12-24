@@ -54,22 +54,13 @@
 
 /* Common button styles */
 /* Specific buttons */
-.search button {
+.nt-search button {
   width: 24px;
   height: 24px;
-  background: transparent url("/assets/img/icon-search.png") center center no-repeat;
+  background: transparent url("../img/icon-search.png") center center no-repeat;
   vertical-align: middle;
+  padding: 0;
   border: none; }
-
-.button.round {
-  background: transparent;
-  font-family: 'NationalTrustDisplayTTRegular';
-  font-size: 1.25em;
-  background-color: transparent;
-  padding: .75em 1em;
-  border: solid 2px #2c2c2c; }
-  .button.round:hover {
-    color: #2c2c2c; }
 
 /* @start Common */
 h1 {
@@ -103,7 +94,6 @@ h5 {
 
 .nt-header-module-intro,
 .nt-header-module-details,
-.nt-share-group,
 .nt-meta-info,
 .nt-content-body,
 .nt-related-content {
@@ -137,9 +127,16 @@ header nav {
       padding: 0;
       margin: 0 1em; }
 header .nt-search-handler {
-  right: 19px; }
-header .nt-search input {
-  font-size: .9em; }
+  right: 1.8rem; }
+header .nt-search {
+  width: 21%;
+  display: none;
+  right: 0;
+  background-color: #fff;
+  padding: 0.313rem 0.688rem 0; }
+  header .nt-search input {
+    font-size: .9em;
+    width: 86%; }
 header .nt-mobile-nav-button {
   display: none; }
 
@@ -167,18 +164,23 @@ header .nt-mobile-nav-button {
       width: 68px; }
     .nt-header-module .nt-header-module-details-header h4, .nt-header-module .nt-header-module-details-header .nt-location {
       margin-left: 92px; }
-  .nt-header-module .cta a {
+  .nt-header-module .nt-cta a {
     font-size: 1.5em; }
+  .nt-header-module .nt-main-image {
+    position: relative;
+    z-index: 1; }
   .nt-header-module .nt-share-group {
-    padding: 0; }
+    background-color: #fff;
+    padding-top: 0;
+    padding-left: 10.4%;
+    padding-right: 10.4%; }
     .nt-header-module .nt-share-group .button {
       display: none; }
     .nt-header-module .nt-share-group .nt-share-buttons {
-      position: absolute;
-      bottom: -26px;
-      left: 10.4%;
+      position: relative;
+      z-index: 10;
       display: block;
-      z-index: 10; }
+      margin-top: -1.625rem; }
 
 /* @end Module Header Content */
 /* @start Module Meta Info */

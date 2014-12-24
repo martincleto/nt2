@@ -54,22 +54,13 @@
 
 /* Common button styles */
 /* Specific buttons */
-.search button {
+.nt-search button {
   width: 24px;
   height: 24px;
-  background: transparent url("/assets/img/icon-search.png") center center no-repeat;
+  background: transparent url("../img/icon-search.png") center center no-repeat;
   vertical-align: middle;
+  padding: 0;
   border: none; }
-
-.button.round {
-  background: transparent;
-  font-family: 'NationalTrustDisplayTTRegular';
-  font-size: 1.25em;
-  background-color: transparent;
-  padding: .75em 1em;
-  border: solid 2px #2c2c2c; }
-  .button.round:hover {
-    color: #2c2c2c; }
 
 /* @start Common */
 .nt-header-module-intro,
@@ -79,6 +70,13 @@
   padding-left: 0.9375rem !important;
   padding-right: 0.9375rem !important; }
 
+/*
+.nt-header-inner {
+	max-width: $row-width;
+	margin-left: 8.241%;
+	margin-right: 8.241%;
+}
+*/
 /* @end Common */
 /* @start Navigation Header */
 header .nt-header-inner {
@@ -88,14 +86,16 @@ header nav li {
   padding: 0 .7%; }
 header nav a {
   line-height: 2; }
-header .search {
-  width: 21%;
+header .nt-search {
   display: block;
-  right: 19px;
+  right: 0.9375rem;
+  background-color: #fff;
   padding: 5px 14px 0; }
-  header .search input {
+  header .nt-search input {
     width: 86%; }
-header .search-handler {
+  header .nt-search input[placeholder] {
+    text-overflow: ellipsis; }
+header .nt-search-handler {
   display: none; }
 
 /* @end Navigation Header */
@@ -125,10 +125,12 @@ header .search-handler {
       background-size: 110%; }
   .nt-header-module .nt-header-module-details-header {
     margin-bottom: 28px; }
-  .nt-header-module .nt-share-group .nt-share-buttons {
-    max-width: 73.125rem;
-    width: 100%;
-    left: .9375rem; }
+  .nt-header-module .nt-share-group {
+    padding: 0; }
+    .nt-header-module .nt-share-group .row {
+      max-width: 73.125rem;
+      padding-left: 0.9375rem;
+      margin: 0 auto; }
 
 /* @end Module Header Content */
 /* @start Module Meta Info */
