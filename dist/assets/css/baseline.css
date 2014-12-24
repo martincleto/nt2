@@ -2750,25 +2750,27 @@ header {
       .nt-content-body .tabs dd a {
         font-family: 'NationalTrustDisplayTTRegular';
         background-color: transparent;
-        color: #fff;
+        color: #2c2c2c;
         padding: .75em 1em;
-        border: solid 2px #fff;
+        border: solid 2px #2c2c2c;
         transition: background-color 0.5s ease;
         background-color: transparent; }
         .nt-content-body .tabs dd a:hover, .nt-content-body .tabs dd a:active {
-          color: #2c2c2c;
-          background-color: #fff;
+          color: #fff;
+          background-color: #2c2c2c;
           text-decoration: none; }
     .nt-content-body .tabs dd.active a {
       font-family: 'NationalTrustDisplayTTRegular';
       background-color: transparent;
-      color: #fff;
+      color: #2c2c2c;
       padding: .75em 1em;
-      border: solid 2px #fff;
-      transition: background-color 0.5s ease; }
+      border: solid 2px #2c2c2c;
+      transition: background-color 0.5s ease;
+      background-color: #2c2c2c;
+      color: #fff; }
       .nt-content-body .tabs dd.active a:hover, .nt-content-body .tabs dd.active a:active {
-        color: #2c2c2c;
-        background-color: #fff;
+        color: #fff;
+        background-color: #2c2c2c;
         text-decoration: none; }
   .nt-content-body .tabs-content {
     margin-bottom: 0; }
